@@ -5,7 +5,8 @@ import urllib.parse
 import csv
 
 
-
+# 此处填入自己的微信Authorization
+auth = ''
 def xhs():
     user_input = input('输入需要搜索的关键词: \n')
     keyword = urllib.parse.quote(user_input)
@@ -40,7 +41,7 @@ def setxhs(url,xsign):
         'Referer': 'https://servicewechat.com/wxb296433268a1c654/81/page-frame.html',
         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.10(0x18000a28) NetType/WIFI Language/zh_CN',
         'Host':'www.xiaohongshu.com',
-        'Authorization': 'wxmp.6e250a2f-92d1-4d85-a25b-308241bc5602',
+        'Authorization': auth,
         'X-Sign': xsign,
     }
 
